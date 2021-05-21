@@ -4,6 +4,8 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.U2D;
 
+using RksAdventure.Core.Components;
+
 namespace RksAdventure.Core.Managers
 {
     public enum ResourceType : int
@@ -37,26 +39,26 @@ namespace RksAdventure.Core.Managers
             return (T)System.Array.Find(get.m_Resources[type], x => x.name.Equals(name));
         }
 
-        public static Sprite[] GetApprel(string groupName)
+        public static Sprite[] GetPartSprites(PawnPart part, string groupName)
         {
-            Sprite[] values = new Sprite[3];
+            string resourceName = $"{part} Sprites";
+            Sprite[] values = new Sprite[4];
 
-            SpriteAtlas atlas = (SpriteAtlas)Get.m_Resources[ResourceType.Sprites].First(x => x.name.Equals("Apparel Sprites"));
+            SpriteAtlas atlas = (SpriteAtlas)Get.m_Resources[ResourceType.Sprites].First(x => x.name.Equals(resourceName));
             Sprite[] sprites = new Sprite[atlas.spriteCount];
             atlas.GetSprites(sprites);
 
             sprites = System.Array.FindAll(sprites, x => x.name.Contains(groupName));
             for (int i = 0; i < values.Length; ++i)
             {
-                SpriteDirection dir = (SpriteDirection)i + 1;
+                PawnDirection dir = (PawnDirection)i;
 #if UNITY_EDITOR
                 string str = $"{dir}(Clone)";
 #else
                 string str = dir.ToString();
 #endif
-
-                if (sprites.First(x => x.name.EndsWith(str, System.StringComparison.OrdinalIgnoreCase)) is Sprite sp)
-                    values[i] = sp;
+                var value = sprites.FirstOrDefault(x => x.name.EndsWith(str, System.StringComparison.OrdinalIgnoreCase));
+                values[i] = value;
             }
 
             return values;

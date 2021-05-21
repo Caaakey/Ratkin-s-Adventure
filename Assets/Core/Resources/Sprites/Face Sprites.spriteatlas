@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Face Sprites
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 9c0e6672a4018624790f61e25349d7ca, type: 3}
+    totalSpriteSurfaceArea: 147456
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: c590b842d5213be428ea92b6a7786b81, type: 3}
+  - {fileID: 21300000, guid: a3002a62048a5d24393345fa1c020ed0, type: 3}
+  - {fileID: 21300000, guid: 6e609a72fd5be964cb6f1e40deefc066, type: 3}
+  - {fileID: 21300000, guid: a6486ff3b657ccc4fb8a5cce4570a969, type: 3}
+  - {fileID: 21300000, guid: 9711bf35bfd436f4696c56fd8ede9395, type: 3}
+  - {fileID: 21300000, guid: 4b8f3427d96b9ae42886047ce572bd19, type: 3}
+  - {fileID: 21300000, guid: d72ee5ea618ebff4a9d6520978684d34, type: 3}
+  - {fileID: 21300000, guid: 087d207eb863c8345b37009e7d843224, type: 3}
+  - {fileID: 21300000, guid: 97b1718e62e633e4e8af3f98aeecc903, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Default_South
+  - Pointy_South
+  - Pointy_North
+  - Wide_North
+  - Wide_East
+  - Default_East
+  - Wide_South
+  - Pointy_East
+  - Default_North
+  m_RenderDataMap: {}
+  m_Tag: Face Sprites
+  m_IsVariant: 0

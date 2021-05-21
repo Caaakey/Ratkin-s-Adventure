@@ -32,7 +32,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 19a3a520016741f46a93fc37faf0f9e4, type: 3}
-    totalSpriteSurfaceArea: 54336
+    totalSpriteSurfaceArea: 49152
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -40,13 +40,11 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: 23289d70d42e6dc40be5f0bd9a9e6737, type: 3}
   - {fileID: 21300000, guid: 49e5dc15f4a8df749b09dfc5f63e399a, type: 3}
-  - {fileID: 21300000, guid: 79e19e85e8c4dfc4d9f88814633c9477, type: 3}
   - {fileID: 21300000, guid: 89be3e3a73b206e4ca038f9966f4171a, type: 3}
   m_PackedSpriteNamesToIndex:
-  - RK_ApronSkirt_Thin_south
-  - RK_ApronSkirt_Thin_east
-  - RK_ApronSkirt
-  - RK_ApronSkirt_Thin_north
+  - Default_South
+  - Default_East
+  - Default_North
   m_RenderDataMap: {}
   m_Tag: Apparel Sprites
   m_IsVariant: 0

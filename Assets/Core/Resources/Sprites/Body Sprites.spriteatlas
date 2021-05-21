@@ -32,41 +32,19 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: a092cfcd3976503459055a3e74633617, type: 3}
-    totalSpriteSurfaceArea: 229376
+    totalSpriteSurfaceArea: 49152
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 8d6e10e18e1f97843af862c7e9e945ae, type: 3}
-  - {fileID: 21300000, guid: 0e686ab39896d6d42826f1d5689b3a8c, type: 3}
-  - {fileID: 21300000, guid: 1921d565531e199418043df77f186374, type: 3}
   - {fileID: 21300000, guid: 2c38e117a64d53d4d8bdaf50db7713c4, type: 3}
-  - {fileID: 21300000, guid: 0bda8ac7ca3f9eb488592fc550e33617, type: 3}
-  - {fileID: 21300000, guid: 509fa8d83df27f84094c4f3715ab3f45, type: 3}
   - {fileID: 21300000, guid: 41500d7a5df0bb4419f9814d8d2a86aa, type: 3}
-  - {fileID: 21300000, guid: 69be608bc2cc77a41928d066a42ff0a8, type: 3}
-  - {fileID: 21300000, guid: 82549c1c7e6d6c847b373f1cc33cddf5, type: 3}
-  - {fileID: 21300000, guid: 97608ecc9034e2f47a6bd13340797f71, type: 3}
-  - {fileID: 21300000, guid: f7b02bdcaa6df464fbd1b474862d38e8, type: 3}
-  - {fileID: 21300000, guid: 80a9b71f305ebbc4e90b12d61d65fd98, type: 3}
-  - {fileID: 21300000, guid: dbb7497f21e76a64c8c921618338c1a1, type: 3}
-  - {fileID: 21300000, guid: 344e9b8f9329acd4ebb124c7af257276, type: 3}
   m_PackedSpriteNamesToIndex:
-  - BodiesNaked_Thin_south
-  - RK_Ear_east
-  - RK_Ear_north
-  - BodiesNaked_Thin_east
-  - RK_EarLeft_north
-  - RK_Ear_south
-  - BodiesNaked_Thin_north
-  - RK_EarRight_south
-  - RK_EarRight_north
-  - RK_Tail_east
-  - RK_EarRight_east
-  - RK_EarLeft_south
-  - RK_Tail_north
-  - RK_EarLeft_east
+  - Default_South
+  - Default_East
+  - Default_North
   m_RenderDataMap: {}
   m_Tag: Body Sprites
   m_IsVariant: 0

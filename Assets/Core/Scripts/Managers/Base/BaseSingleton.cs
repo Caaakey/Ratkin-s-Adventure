@@ -16,7 +16,10 @@ namespace RksAdventure.Core.Managers
                     if (finds.Length > 1) throw new System.Exception($"{typeof(T).Name} is too many");
                     if (finds.Length == 1) m_Instance = finds[0];
                     else
+                    {
                         m_Instance = new GameObject($"{typeof(T).Name} Manager").AddComponent<T>();
+                        DontDestroyOnLoad(m_Instance.gameObject);
+                    }
                 }
 
                 return m_Instance;

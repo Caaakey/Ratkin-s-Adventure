@@ -327,11 +327,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7367034709721414498}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -55.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 7350620216587772775}
+  m_Father: {fileID: 7350620215383205644}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3833519097124821256
@@ -373,13 +373,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_DrawMode: 1
+  m_Size: {x: 128, y: 128}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -423,6 +423,7 @@ Transform:
   m_Children:
   - {fileID: 7350620216845252192}
   - {fileID: 7350620217243674030}
+  - {fileID: 2301965746837363413}
   m_Father: {fileID: 7350620216587772775}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -501,7 +502,6 @@ Transform:
   m_Children:
   - {fileID: 7350620215383205644}
   - {fileID: 7350620216392289823}
-  - {fileID: 2301965746837363413}
   m_Father: {fileID: 384511489}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -515,6 +515,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7350620216587772775}
   - component: {fileID: 7831686627609158018}
+  - component: {fileID: 7350620216587772777}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Untagged
@@ -522,6 +523,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!210 &7350620216587772777
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7350620216587772776}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!4 &7350620216845252192
 Transform:
   m_ObjectHideFlags: 0
@@ -725,7 +737,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 23289d70d42e6dc40be5f0bd9a9e6737, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -879,3 +891,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3276145e3121b114eb76b2378f6ce87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Direction: 2

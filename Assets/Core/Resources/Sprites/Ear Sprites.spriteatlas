@@ -42,9 +42,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 1921d565531e199418043df77f186374, type: 3}
   - {fileID: 21300000, guid: 509fa8d83df27f84094c4f3715ab3f45, type: 3}
   m_PackedSpriteNamesToIndex:
-  - RK_Ear_east
-  - RK_Ear_north
-  - RK_Ear_south
+  - Default_East
+  - Default_North
+  - Default_South
   m_RenderDataMap: {}
   m_Tag: Ear Sprites
   m_IsVariant: 0
