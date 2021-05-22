@@ -1,9 +1,9 @@
 using UnityEngine;
 
-namespace RksAdventure.Core.Components.Root
+namespace RksAdventure.Core
 {
     [ExecuteInEditMode]
-    public class GameRoot : MonoBehaviour
+    public class GameScaler : MonoBehaviour
     {
         public int Width = 1920;
         public int Height = 1080;
