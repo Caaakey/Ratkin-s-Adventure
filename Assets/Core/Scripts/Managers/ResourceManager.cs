@@ -12,6 +12,7 @@ namespace RksAdventure.Core.Managers
     {
         None = 0,
         Sprites,
+        Tiles,
         Max
     }
 
