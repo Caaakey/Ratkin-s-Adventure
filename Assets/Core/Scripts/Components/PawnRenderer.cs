@@ -1,6 +1,7 @@
 ﻿using System;
 
 using UnityEngine;
+using UnityEngine.Rendering;
 
 using RksAdventure.Core.Managers;
 
@@ -43,28 +44,20 @@ namespace RksAdventure.Core.Components
         public PawnPart[] Part;
         public Sprite[][] Sprites;
     }
-    public class PawnModule : MonoBehaviour
+    public class PawnRenderer
     {
-        private Transform m_CachedTransform;
-        public Transform GetTransform
+        public PawnRenderer(Pawn pawn)
         {
-            get
-            {
-                if (m_CachedTransform == null) m_CachedTransform = transform;
-                return m_CachedTransform;
-            }
-        }
+            m_Pawn = pawn;
+            var transform = pawn.GetTransform;
 
-        [SerializeField] private PawnDirection m_Direction = PawnDirection.South;
-        private SpriteRenderer[] m_Parts = null;
-        private readonly PawnSprite m_PawnSprite = new PawnSprite();
+            if (m_SortingGroup == null)
+                m_SortingGroup = transform.GetComponent<SortingGroup>();
 
-        private void Awake()
-        {
             m_Parts = new SpriteRenderer[m_PawnSprite.Part.Length];
             for (PawnPart i = 0; i <= PawnPart.Tail; ++i)
             {
-                m_Parts[(int)i] = Utility.FindComponentInChild<SpriteRenderer>(GetTransform, i.ToString());
+                m_Parts[(int)i] = Utility.FindComponentInChild<SpriteRenderer>(transform, i.ToString());
             }
 
             UpdatePartSprite(PawnPart.Body, "Default");
@@ -75,14 +68,15 @@ namespace RksAdventure.Core.Components
             UpdatePartSprite(PawnPart.Ear, "Default");
         }
 
+        private readonly Pawn m_Pawn;
+        private readonly SortingGroup m_SortingGroup = null;
+        private readonly SpriteRenderer[] m_Parts = null;
+        private readonly PawnSprite m_PawnSprite = new PawnSprite();
+
         public PawnDirection Direction
         {
-            get => m_Direction;
             set
             {
-                if (m_Direction == value) return;
-                m_Direction = value;
-
                 int index = (int)value;
                 for (int i = 0; i < m_Parts.Length; ++i)
                 {
