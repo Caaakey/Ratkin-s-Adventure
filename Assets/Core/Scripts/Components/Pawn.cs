@@ -47,7 +47,6 @@ namespace RksAdventure.Core.Components
                 m_Direction = value;
 
                 m_Renderer.Direction = m_Direction;
-                m_Movement.Direction = m_Direction;
             }
         }
 

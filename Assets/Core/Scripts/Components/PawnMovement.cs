@@ -19,13 +19,7 @@ namespace RksAdventure.Core.Components
         {
         }
 
-        public PawnDirection Direction
-        {
-            set
-            {
-
-            }
-        }
+        public PawnDirection Direction => m_Pawn.Direction;
 
     }
 }

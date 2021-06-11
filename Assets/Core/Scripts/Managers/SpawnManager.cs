@@ -47,12 +47,11 @@ namespace RksAdventure.Core.Managers
         {
             foreach(var i in pawns)
             {
-                Vector2 position = new Vector2(
-                    Random.Range(m_Location.x, m_Location.xMax),
-                    Random.Range(m_Location.y, m_Location.yMax));
+                Vector3Int position = new Vector3Int(
+                    Random.Range(1, 15), Random.Range(2, 16), 0);
 
                 Debug.Log(position);
-                i.GetTransform.localPosition = position;
+                i.GetTransform.localPosition = TileManager.Get.CellToWorld(new Vector3Int(10, 10, 0));
 
                 i.Direction = PawnDirection.South;
             }
