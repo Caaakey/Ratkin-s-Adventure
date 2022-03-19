@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7d97aa1eba6b945b754e275301a1c8, type: 3}
+  m_Name: Body
+  m_EditorClassIdentifier: 
+  m_East:
+    Sprite: {fileID: 21300000, guid: 42e6c1ec00a4f9d4d94fc9526ff52212, type: 3}
+    Offset: {x: 0, y: 0}
+  m_West:
+    Sprite: {fileID: 0}
+    Offset: {x: 0, y: 0}
+  m_North:
+    Sprite: {fileID: 21300000, guid: d984896ef7246a74685776961fb22297, type: 3}
+    Offset: {x: 0, y: 0}
+  m_South:
+    Sprite: {fileID: 21300000, guid: 0c94e394ea1216d4abae53a631619963, type: 3}
+    Offset: {x: 0, y: 0}
+  m_IsFlipX: 1
+  m_Bodypart: 1

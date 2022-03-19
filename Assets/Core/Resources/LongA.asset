@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7d97aa1eba6b945b754e275301a1c8, type: 3}
+  m_Name: LongA
+  m_EditorClassIdentifier: 
+  m_East:
+    Sprite: {fileID: 21300000, guid: 2098021aa81321f4c8609d2ed5a7b502, type: 3}
+    Offset: {x: 0, y: 0}
+  m_West:
+    Sprite: {fileID: 0}
+    Offset: {x: 0, y: 0}
+  m_North:
+    Sprite: {fileID: 21300000, guid: 2682f6fd3c4ac3446814e6b40ad787ac, type: 3}
+    Offset: {x: 0, y: 0}
+  m_South:
+    Sprite: {fileID: 21300000, guid: 6d32c3bae3e70f44e83a814ac06c953e, type: 3}
+    Offset: {x: 0, y: 0}
+  m_IsFlipX: 1
+  m_Bodypart: 3
