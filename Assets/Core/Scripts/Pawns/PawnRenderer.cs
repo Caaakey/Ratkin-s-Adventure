@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace RKCore.Pawns
 {
+    [System.Serializable]
     public class DirectionRenderer
     {
         private Transform m_RenderTransform;
@@ -13,6 +14,7 @@ namespace RKCore.Pawns
         public void OnAwake()
         {
             Sprite.OnAwake();
+
             m_RenderTransform = Renderer.transform;
             m_PositionOffset = m_RenderTransform.localPosition;
         }
@@ -23,7 +25,9 @@ namespace RKCore.Pawns
             if (!data.Offset.Equals(Vector2.zero))
                 m_RenderTransform.localPosition = m_PositionOffset + data.Offset;
             else
+            {
                 m_RenderTransform.localPosition = m_PositionOffset;
+            }
 
             if (Sprite.UseFlipEastSprite && dir == PawnDirection.West)
                 Renderer.flipX = true;
@@ -41,11 +45,20 @@ namespace RKCore.Pawns
 
         private void Awake()
         {
+            bool isForceDirUpdate = m_Direction != PawnDirection.None;
+            var dir = m_Direction;
+            m_Direction = PawnDirection.None;
+
             if (m_Renderers != null)
             {
                 for (int i = 0; i < m_Renderers.Length; ++i)
+                {
                     m_Renderers[i].OnAwake();
+                    if (isForceDirUpdate) m_Renderers[i].SetSprite(dir);
+                }
             }
+
+            if (isForceDirUpdate) m_Direction = dir;
         }
 
         public PawnDirection SpriteDirection
@@ -61,6 +74,5 @@ namespace RKCore.Pawns
                 m_Direction = value;
             }
         }
-
     }
 }

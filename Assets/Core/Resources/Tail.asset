@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_East:
     Sprite: {fileID: 21300000, guid: 9606dab778e6ff74abf88dbae93417cd, type: 3}
-    Offset: {x: 0, y: 0}
+    Offset: {x: -0.8, y: 0.2}
   m_West:
     Sprite: {fileID: 0}
-    Offset: {x: 0, y: 0}
+    Offset: {x: 0.8, y: 0.2}
   m_North:
     Sprite: {fileID: 21300000, guid: c2f125fa679afc547b3206190386f7a3, type: 3}
     Offset: {x: 0, y: 0}
